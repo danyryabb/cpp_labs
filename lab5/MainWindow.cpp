@@ -15,10 +15,9 @@ __fastcall TForm1::TForm1(TComponent* Owner)
   srand(time(0));
 }
 //---------------------------------------------------------------------------
-void TForm1::InTwoCircle(Queue &InputQueue)
+void TForm1::ToNewList(Queue &InputQueue)
 {
 	Queue FirstQueue;
-	Queue SecondQueue;
 	element* max = InputQueue.GetMax();
 	element* min = InputQueue.GetMin();
 	EditMIN->Text = AnsiString(min->data);
@@ -31,7 +30,7 @@ void TForm1::InTwoCircle(Queue &InputQueue)
 	while(!InputQueue.IsEmpty())
 	{
 		ListBoxSecond->Items->Add(AnsiString(InputQueue.ShowFirst()));
-		SecondQueue.Push(InputQueue.Pop());
+		InputQueue.Pop();
 	}
 }
 void __fastcall TForm1::ButtonRandomClick(TObject *Sender)
@@ -47,7 +46,7 @@ void __fastcall TForm1::ButtonRandomClick(TObject *Sender)
 		InputQueue.Push(temp);
 		ListBoxFirst->Items->Add(AnsiString(temp));
 	}
-	InTwoCircle(InputQueue);
+	ToNewList(InputQueue);
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonCloseClick(TObject *Sender)
