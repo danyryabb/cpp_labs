@@ -25,7 +25,7 @@ __published:	// IDE-managed Components
 private:	// User declarations
 public:		// User declarations
 	void ShowOnListBox();
-	void InTwoCircle(Queue &InputQueue);
+	void ToNewList(Queue &InputQueue);
 	__fastcall TForm1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
