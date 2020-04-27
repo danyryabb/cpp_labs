@@ -29,6 +29,9 @@ __published:	// IDE-managed Components
 	TMemo *MemoKey;
 	TButton *ButtonFromArray;
 	TMemo *MemoFIO;
+	TLabel *Label5;
+	TLabel *Label6;
+	TLabel *Label7;
 	void __fastcall ButtonSearchNodeClick(TObject *Sender);
 	void __fastcall ButtonAddNewNodeClick(TObject *Sender);
 	void __fastcall ButtonCloseClick(TObject *Sender);
@@ -37,7 +40,8 @@ __published:	// IDE-managed Components
 	void __fastcall ButtonDeleteNegativeClick(TObject *Sender);
 	void __fastcall ButtonFromArrayClick(TObject *Sender);
 private:	// User declarations
-	 Hash hash;
+	 //Hash hash;
+     ExSolution hash;
 	public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
 };

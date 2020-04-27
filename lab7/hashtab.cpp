@@ -66,6 +66,17 @@ listnode* Hash :: Search(listnode **hashtab, int key) // функция поиска вершины 
 	}
 	if(current == NULL) return NULL;
 }
+
+void ExSolution :: deleteNegative(listnode **hashtab)
+{
+   for(int key = MAX_NEGATIVE; key < 0; key++)
+   {
+	  while(Search(hashtab, key) != nullptr)
+	  {
+		deleteNode(hashtab, key);
+	  }
+   }
+}
 //------------------------------------------------------------------------------
 #pragma package(smart_init)
 

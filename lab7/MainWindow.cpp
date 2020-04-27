@@ -2,9 +2,7 @@
 
 #include <vcl.h>
 #include <hashtab.h>
-
 #pragma hdrstop
-
 #include "MainWindow.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -39,7 +37,7 @@ void __fastcall TForm1::ButtonSearchNodeClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonAddNewNodeClick(TObject *Sender)
 {
-	int thiskey = -10 + rand()%20;
+	int thiskey = MAX_NEGATIVE + rand()%20;
 	hash.insertNode(hashtab, thiskey, EditInfo->Text);
 	int index = hash.hashFunction(thiskey);
 	MemoGetALL->Lines->Add(hashtab[hash.hashFunction(thiskey)]->info + "\t" +
@@ -89,14 +87,7 @@ void __fastcall TForm1::ButtonDeleteNodeClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonDeleteNegativeClick(TObject *Sender)
 {
-
-   for(int key = -10; key < 0; key++)
-   {
-	  while(hash.Search(hashtab, key) != nullptr)
-	  {
-		hash.deleteNode(hashtab, key);
-	  }
-   }
+   hash.deleteNegative(hashtab);
    MemoGetALL->Lines->Clear();
    listnode * current;
    for(int i = 0; i < HASHTAB_SIZE; i++)

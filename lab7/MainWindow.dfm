@@ -50,11 +50,32 @@ object Form1: TForm1
     Caption = '----------    ----------   ----------'
   end
   object Label2: TLabel
-    Left = 36
-    Top = 34
+    Left = 34
+    Top = 21
     Width = 137
     Height = 13
     Caption = 'Input information from array'
+  end
+  object Label5: TLabel
+    Left = 78
+    Top = 295
+    Width = 55
+    Height = 13
+    Caption = 'Enter name'
+  end
+  object Label6: TLabel
+    Left = 30
+    Top = 40
+    Width = 18
+    Height = 13
+    Caption = 'Key'
+  end
+  object Label7: TLabel
+    Left = 135
+    Top = 43
+    Width = 27
+    Height = 13
+    Caption = 'Name'
   end
   object MemoGetALL: TMemo
     Left = 216
@@ -126,7 +147,7 @@ object Form1: TForm1
   end
   object MemoKey: TMemo
     Left = 8
-    Top = 53
+    Top = 59
     Width = 65
     Height = 197
     TabOrder = 8
@@ -141,8 +162,8 @@ object Form1: TForm1
     OnClick = ButtonFromArrayClick
   end
   object MemoFIO: TMemo
-    Left = 86
-    Top = 53
+    Left = 87
+    Top = 61
     Width = 106
     Height = 197
     TabOrder = 10
