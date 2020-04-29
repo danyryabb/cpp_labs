@@ -4,7 +4,7 @@
 #include <string.h>
 #include <vcl.h>
 #define HASHTAB_SIZE 20
-#define MAX_NEGATIVE -10
+
 //---------------------------------------------------------------------------
 struct listnode {
 	AnsiString info;

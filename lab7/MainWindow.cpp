@@ -37,11 +37,15 @@ void __fastcall TForm1::ButtonSearchNodeClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonAddNewNodeClick(TObject *Sender)
 {
-	int thiskey = MAX_NEGATIVE + rand()%20;
-	hash.insertNode(hashtab, thiskey, EditInfo->Text);
-	int index = hash.hashFunction(thiskey);
-	MemoGetALL->Lines->Add(hashtab[hash.hashFunction(thiskey)]->info + "\t" +
-	hashtab[hash.hashFunction(thiskey)]->key + " index: " + index);
+	int index;
+	for(int i = 0; !(MemoForNames->Lines->Strings[i]).IsEmpty(); i++)
+	{
+		int thiskey = -10 + rand()%20;
+		hash.insertNode(hashtab, thiskey, MemoForNames->Lines->Strings[i]);
+		index = hash.hashFunction(thiskey);
+        MemoGetALL->Lines->Add("Info: " + hashtab[hash.hashFunction(thiskey)]->info + "\tKey:" +
+		hashtab[hash.hashFunction(thiskey)]->key + " Index: " + index);
+	}
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonCloseClick(TObject *Sender)
@@ -53,6 +57,7 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 {
    srand(time(0));
    MemoGetALL->Lines->Clear();
+   MemoForNames->Lines->Clear();
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonDeleteNodeClick(TObject *Sender)
@@ -73,8 +78,8 @@ void __fastcall TForm1::ButtonDeleteNodeClick(TObject *Sender)
 		   {
 			  for(current = hashtab[i]; current!=NULL;current=current->next)
 			  {
-				 MemoGetALL->Lines->Add(current->info + "\t" + current->key +
-			  " index: " + i);
+				 MemoGetALL->Lines->Add("Info: " + current->info + "\tKey:" + current->key +
+			  " Index: " + i);
 			  }
 		   }
 		}
@@ -96,8 +101,8 @@ void __fastcall TForm1::ButtonDeleteNegativeClick(TObject *Sender)
 	  {
 		 for(current = hashtab[i]; current!=NULL;current=current->next)
 		 {
-			 MemoGetALL->Lines->Add(current->info + "\t" + current->key +
-			 " index: " + i);
+			 MemoGetALL->Lines->Add("Info: " + current->info + "\tKey:" + current->key +
+			  " Index: " + i);
 		 }
 	  }
    }
@@ -108,10 +113,10 @@ void __fastcall TForm1::ButtonFromArrayClick(TObject *Sender)
 	hash.hashtab_init(hashtab);
 	try
 	{
-		for(int i = 0; !(MemoKey->Lines->Strings[i]).IsEmpty() && !(MemoFIO->Lines->Strings[i]).IsEmpty(); i++)
+		for(int i = 0; !(MemoKey->Lines->Strings[i]).IsEmpty() && !(MemoArrNames->Lines->Strings[i]).IsEmpty(); i++)
 		{
 			int thiskey = (MemoKey->Lines->Strings[i]).ToInt();
-			hash.insertNode(hashtab, thiskey, MemoFIO->Lines->Strings[i]);
+			hash.insertNode(hashtab, thiskey, MemoArrNames->Lines->Strings[i]);
 		}
         MemoGetALL->Lines->Clear();
 		listnode * current;
@@ -121,8 +126,8 @@ void __fastcall TForm1::ButtonFromArrayClick(TObject *Sender)
 		   {
 			  for(current = hashtab[i]; current!=NULL;current=current->next)
 			  {
-				 MemoGetALL->Lines->Add(current->info + "\t" + current->key +
-				" index: " + i);
+				 MemoGetALL->Lines->Add("Info: " + current->info + "\tKey:" + current->key +
+			  " Index: " + i);
 			  }
 		   }
 		}

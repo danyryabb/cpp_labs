@@ -1,7 +1,6 @@
 //---------------------------------------------------------------------------
 
 #pragma hdrstop
-
 #include "hashtab.h"
 //---------------------------------------------------------------------------
 
@@ -20,7 +19,7 @@ void Hash :: hashtab_init(listnode **hashtab)
 int Hash :: hashFunction(int key)
 {
    if(key > 0) return key % HASHTAB_SIZE;
-   else return 10 + key % HASHTAB_SIZE;
+   else return abs(key % HASHTAB_SIZE);
 }
 //------------------------------------------------------------------------------
 void Hash :: insertNode(listnode **hashtab, int key, AnsiString info)  // функция поиска местоположения и вставки вершины в таблицу
@@ -69,13 +68,20 @@ listnode* Hash :: Search(listnode **hashtab, int key) // функция поиска вершины 
 
 void ExSolution :: deleteNegative(listnode **hashtab)
 {
-   for(int key = MAX_NEGATIVE; key < 0; key++)
-   {
-	  while(Search(hashtab, key) != nullptr)
-	  {
-		deleteNode(hashtab, key);
-	  }
-   }
+   	listnode* current;
+	for(int i = 0; i < HASHTAB_SIZE; i++)
+	{
+	   if(hashtab[i] != nullptr)
+	   {
+		  for(current = hashtab[i]; current!=NULL;current=current->next)
+		  {
+			 if(current->key < 0)
+			 {
+			   deleteNode(hashtab, current->key);
+			 }
+		  }
+	   }
+	}
 }
 //------------------------------------------------------------------------------
 #pragma package(smart_init)

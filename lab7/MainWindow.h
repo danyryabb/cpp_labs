@@ -14,7 +14,6 @@ class TForm1 : public TForm
 __published:	// IDE-managed Components
 	TMemo *MemoGetALL;
 	TEdit *EditKey;
-	TEdit *EditInfo;
 	TLabel *Label3;
 	TLabel *Label4;
 	TButton *ButtonAddNewNode;
@@ -28,10 +27,11 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TMemo *MemoKey;
 	TButton *ButtonFromArray;
-	TMemo *MemoFIO;
+	TMemo *MemoArrNames;
 	TLabel *Label5;
 	TLabel *Label6;
 	TLabel *Label7;
+	TMemo *MemoForNames;
 	void __fastcall ButtonSearchNodeClick(TObject *Sender);
 	void __fastcall ButtonAddNewNodeClick(TObject *Sender);
 	void __fastcall ButtonCloseClick(TObject *Sender);
@@ -40,9 +40,8 @@ __published:	// IDE-managed Components
 	void __fastcall ButtonDeleteNegativeClick(TObject *Sender);
 	void __fastcall ButtonFromArrayClick(TObject *Sender);
 private:	// User declarations
-	 //Hash hash;
      ExSolution hash;
-	public:		// User declarations
+public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------

@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 587
+  ClientHeight = 597
   ClientWidth = 476
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,14 +16,14 @@ object Form1: TForm1
   TextHeight = 13
   object Label3: TLabel
     Left = 48
-    Top = 384
+    Top = 441
     Width = 114
     Height = 13
     Caption = 'Search or delete by key'
   end
   object Label4: TLabel
     Left = 37
-    Top = 406
+    Top = 463
     Width = 18
     Height = 13
     Caption = 'Key'
@@ -37,45 +37,45 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 54
-    Top = 486
+    Top = 518
     Width = 92
     Height = 13
     Caption = 'First reached name'
   end
   object LabelName: TLabel
     Left = 30
-    Top = 505
+    Top = 537
     Width = 141
     Height = 13
     Caption = '----------    ----------   ----------'
   end
   object Label2: TLabel
-    Left = 34
+    Left = 30
     Top = 21
     Width = 137
     Height = 13
     Caption = 'Input information from array'
   end
   object Label5: TLabel
-    Left = 78
-    Top = 295
-    Width = 55
+    Left = 16
+    Top = 296
+    Width = 175
     Height = 13
-    Caption = 'Enter name'
+    Caption = 'Enter names to create random keys:'
   end
   object Label6: TLabel
     Left = 30
     Top = 40
-    Width = 18
-    Height = 13
-    Caption = 'Key'
-  end
-  object Label7: TLabel
-    Left = 135
-    Top = 43
     Width = 27
     Height = 13
-    Caption = 'Name'
+    Caption = 'Keys:'
+  end
+  object Label7: TLabel
+    Left = 119
+    Top = 42
+    Width = 36
+    Height = 13
+    Caption = 'Names:'
   end
   object MemoGetALL: TMemo
     Left = 216
@@ -88,61 +88,54 @@ object Form1: TForm1
   end
   object EditKey: TEdit
     Left = 61
-    Top = 403
+    Top = 460
     Width = 83
     Height = 21
     TabOrder = 1
   end
-  object EditInfo: TEdit
-    Left = 8
-    Top = 313
-    Width = 185
-    Height = 21
-    TabOrder = 2
-  end
   object ButtonAddNewNode: TButton
     Left = 61
-    Top = 340
+    Top = 410
     Width = 83
     Height = 25
     Caption = 'Add'
-    TabOrder = 3
+    TabOrder = 2
     OnClick = ButtonAddNewNodeClick
   end
   object ButtonSearchNode: TButton
     Left = 9
-    Top = 443
+    Top = 487
     Width = 90
     Height = 25
     Caption = 'Search'
-    TabOrder = 4
+    TabOrder = 3
     OnClick = ButtonSearchNodeClick
   end
   object ButtonDeleteNode: TButton
     Left = 105
-    Top = 443
+    Top = 487
     Width = 88
     Height = 25
     Caption = 'Delete'
-    TabOrder = 5
+    TabOrder = 4
     OnClick = ButtonDeleteNodeClick
   end
   object ButtonDeleteNegative: TButton
-    Left = 97
-    Top = 544
-    Width = 96
-    Height = 25
+    Left = 105
+    Top = 556
+    Width = 88
+    Height = 29
     Caption = 'Delete Negative'
-    TabOrder = 6
+    TabOrder = 5
     OnClick = ButtonDeleteNegativeClick
   end
   object ButtonClose: TButton
-    Left = 16
-    Top = 544
-    Width = 75
-    Height = 25
+    Left = 8
+    Top = 556
+    Width = 91
+    Height = 29
     Caption = 'Close'
-    TabOrder = 7
+    TabOrder = 6
     OnClick = ButtonCloseClick
   end
   object MemoKey: TMemo
@@ -150,7 +143,7 @@ object Form1: TForm1
     Top = 59
     Width = 65
     Height = 197
-    TabOrder = 8
+    TabOrder = 7
   end
   object ButtonFromArray: TButton
     Left = 61
@@ -158,14 +151,23 @@ object Form1: TForm1
     Width = 83
     Height = 25
     Caption = 'Add'
-    TabOrder = 9
+    TabOrder = 8
     OnClick = ButtonFromArrayClick
   end
-  object MemoFIO: TMemo
+  object MemoArrNames: TMemo
     Left = 87
     Top = 61
     Width = 106
     Height = 197
+    TabOrder = 9
+  end
+  object MemoForNames: TMemo
+    Left = 8
+    Top = 315
+    Width = 185
+    Height = 89
+    Lines.Strings = (
+      'MemoForNames')
     TabOrder = 10
   end
 end
