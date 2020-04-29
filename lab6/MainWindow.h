@@ -37,6 +37,10 @@ __published:	// IDE-managed Components
 	TButton *ButtonWritePreOrder;
 	TButton *ButtonWriteInOrder;
 	TButton *ButtonDeleteBranch;
+	TLabel *Label7;
+	TLabel *Label8;
+	TLabel *Label9;
+	TLabel *Label10;
 
     void __fastcall ButtonTreeFromArrayClick(TObject *Sender);
 	void __fastcall ButtonAddNewNodeClick(TObject *Sender);
@@ -50,7 +54,7 @@ __published:	// IDE-managed Components
 	void __fastcall ButtonDeleteBranchClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-      Tree ThisTree;
+      ExSolution ThisTree;
 	__fastcall TForm1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------

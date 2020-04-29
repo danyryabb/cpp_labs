@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.078,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Tree.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.775,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.263,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.064,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.332,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.dfm=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.332,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.633,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\MainWindow.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.331,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.241,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Project1.cbproj=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.666,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Project1PCH1.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.078,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Tree.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.064,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit2.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.064,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.652,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.633,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\MainWindow.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.633,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\MainWindow.dfm=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.064,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.154,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.633,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\MainWindow.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.078,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Tree.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.590,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.154,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.331,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.332,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.263,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.775,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.078,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Tree.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Tree.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.633,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.dfm=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\MainWindow.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.241,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.633,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\MainWindow.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.332,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.666,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\lab6\Project1PCH1.h</Transaction>
   </Transactions>
 </BorlandProject>

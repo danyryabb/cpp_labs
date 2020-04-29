@@ -15,41 +15,41 @@ object Form1: TForm1
   TextHeight = 13
   object Label1: TLabel
     Left = 57
-    Top = 42
+    Top = 21
     Width = 137
     Height = 13
     Caption = 'Input information from array'
   end
   object Label2: TLabel
-    Left = 105
-    Top = 310
+    Left = 101
+    Top = 295
     Width = 69
     Height = 13
     Caption = 'Add new node'
   end
   object Label3: TLabel
-    Left = 80
+    Left = 74
     Top = 400
     Width = 114
     Height = 13
     Caption = 'Search or delete by key'
   end
   object Label4: TLabel
-    Left = 69
+    Left = 63
     Top = 422
     Width = 18
     Height = 13
     Caption = 'Key'
   end
   object LabelFIO: TLabel
-    Left = 80
+    Left = 74
     Top = 449
     Width = 141
     Height = 13
     Caption = '----------    ----------   ----------'
   end
   object Label5: TLabel
-    Left = 47
+    Left = 41
     Top = 449
     Width = 27
     Height = 13
@@ -61,6 +61,34 @@ object Form1: TForm1
     Width = 104
     Height = 13
     Caption = 'Information from tree'
+  end
+  object Label7: TLabel
+    Left = 40
+    Top = 40
+    Width = 27
+    Height = 13
+    Caption = 'Keys:'
+  end
+  object Label8: TLabel
+    Left = 154
+    Top = 42
+    Width = 36
+    Height = 13
+    Caption = 'Names:'
+  end
+  object Label9: TLabel
+    Left = 40
+    Top = 310
+    Width = 22
+    Height = 13
+    Caption = 'Key:'
+  end
+  object Label10: TLabel
+    Left = 154
+    Top = 312
+    Width = 31
+    Height = 13
+    Caption = 'Name:'
   end
   object MemoKey: TMemo
     Left = 16
@@ -109,44 +137,44 @@ object Form1: TForm1
     OnClick = ButtonAddNewNodeClick
   end
   object EditKey: TEdit
-    Left = 93
+    Left = 87
     Top = 419
     Width = 106
     Height = 21
     TabOrder = 6
   end
   object ButtonSearch: TButton
-    Left = 45
+    Left = 23
     Top = 468
     Width = 75
-    Height = 25
+    Height = 30
     Caption = 'Search'
     TabOrder = 7
     OnClick = ButtonSearchClick
   end
   object ButtonDelete: TButton
-    Left = 149
+    Left = 190
     Top = 468
     Width = 75
-    Height = 25
+    Height = 30
     Caption = 'Delete'
     TabOrder = 8
     OnClick = ButtonDeleteClick
   end
   object ButtonBalance: TButton
-    Left = 470
-    Top = 460
+    Left = 480
+    Top = 468
     Width = 99
-    Height = 33
+    Height = 30
     Caption = 'Balance'
     TabOrder = 9
     OnClick = ButtonBalanceClick
   end
   object ButtonExit: TButton
     Left = 680
-    Top = 460
+    Top = 468
     Width = 89
-    Height = 33
+    Height = 30
     Caption = 'Exit'
     TabOrder = 10
     OnClick = ButtonExitClick
@@ -169,34 +197,34 @@ object Form1: TForm1
   end
   object ButtonWritePostOrder: TButton
     Left = 680
-    Top = 421
+    Top = 432
     Width = 89
-    Height = 33
+    Height = 30
     Caption = 'Write post-order'
     TabOrder = 13
     OnClick = ButtonWritePostOrderClick
   end
   object ButtonWritePreOrder: TButton
     Left = 585
-    Top = 421
+    Top = 432
     Width = 89
-    Height = 33
+    Height = 30
     Caption = 'Write pre-order'
     TabOrder = 14
     OnClick = ButtonWritePreOrderClick
   end
   object ButtonWriteInOrder: TButton
     Left = 585
-    Top = 460
+    Top = 468
     Width = 89
-    Height = 33
+    Height = 30
     Caption = 'Write in-order'
     TabOrder = 15
     OnClick = ButtonWriteInOrderClick
   end
   object ButtonDeleteBranch: TButton
-    Left = 94
-    Top = 499
+    Left = 104
+    Top = 468
     Width = 80
     Height = 30
     Caption = 'Delete Branch'

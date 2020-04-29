@@ -135,7 +135,7 @@ void Tree::DeleteTreeRecurtion(PNode current)
 	}
 }
 
-void Tree::DeleteNodeBranch(int key)
+void ExSolution::DeleteNodeBranch(int key)
 {
 	PNode current = head, oldcurrent = NULL;
     while(current != NULL && current->key != key)
